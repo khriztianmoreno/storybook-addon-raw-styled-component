@@ -19,7 +19,10 @@ following content:
 
 module.exports = {
   stories: ['../stories/**/*.stories.js'],
-  addons: [...'@khriztianmoreno/storybook-addon-raw-styled-component/register'],
+  addons: [
+    ..., // Others addon
+    '@khriztianmoreno/storybook-addon-raw-styled-component/register'
+  ],
 };
 ```
 
@@ -28,10 +31,10 @@ module.exports = {
 Add `withHTML` as a global decorator inside `.storybook/config.js`:
 
 ```js
-// .storybook/config.js
+// .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
 
 addDecorator(withHTML);
 ```
