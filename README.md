@@ -3,13 +3,16 @@
 This addon for Storybook adds a tab that displays the compiled HTML for each
 story. It uses [highlight.js](https://highlightjs.org/) for syntax highlighting.
 
-## Getting Started
+## 🌎 Demo
+[Storybook Addon RAW styled-component](https://storybook-addon-raw-styled-component.netlify.com/)
+
+## 🔥 Getting Started
 
 ```sh
 npm i --save-dev @khriztianmoreno/storybook-addon-raw-styled-component
 ```
 
-### Register addon
+### 📝 Register addon
 
 Create a file called `addons.js` inside the `.storybook` directory and add the
 following content:
@@ -26,7 +29,7 @@ module.exports = {
 };
 ```
 
-## Usage
+## 👨🏼‍💻 Usage
 
 Add `withHTML` as a global decorator inside `.storybook/config.js`:
 
@@ -34,7 +37,7 @@ Add `withHTML` as a global decorator inside `.storybook/config.js`:
 // .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
 
 addDecorator(withHTML);
 ```
@@ -47,7 +50,7 @@ The HTML is formatted with Prettier. You can override the Prettier config
 // .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
 
 addDecorator(
   withHTML({
@@ -60,6 +63,6 @@ addDecorator(
 );
 ```
 
-## Supported frameworks
+## 🎗 Supported frameworks
 
 Right now, the addon can be used with React.js framework

@@ -1,6 +1,6 @@
 {
   "name": "@khriztianmoreno/storybook-addon-raw-styled-component",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A Storybook addon that extracts and displays compiled syntax-highlighted HTML & CSS",
   "main": "index.js",
   "scripts": {
