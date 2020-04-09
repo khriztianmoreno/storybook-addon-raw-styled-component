@@ -58,7 +58,7 @@ const BackgroundText = styled('div')`
   -webkit-background-clip: text;
   color: rgba(255, 255, 255, .1);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
-  font-size: 10em;
+  font-size: 50px;
   font-weight: 700;
   left: 50%;
   position: absolute;
@@ -81,6 +81,8 @@ const Rotate = styled.div`
   display: inline-block;
   font-size: 50px;
   padding: 2rem 1rem;
+  position: absolute;
+  top: 25%;
 `;
 
 const shadows = keyframes`

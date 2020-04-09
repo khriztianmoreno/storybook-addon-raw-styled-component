@@ -2,3 +2,4 @@ node_modules
 yarn-error.log
 lib
 npm-debug.log
+storybook-static
