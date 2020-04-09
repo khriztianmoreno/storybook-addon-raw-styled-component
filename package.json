@@ -4,8 +4,9 @@
   "description": "A Storybook addon that extracts and displays compiled syntax-highlighted HTML & CSS",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && babel -d ./lib ./src",
+    "build-storybook": "build-storybook --config-dir ./exmples/react/.storybook",
     "build:watch": "babel --watch -d ./lib ./src",
+    "build": "npm run clean && babel -d ./lib ./src",
     "clean": "rm -rf ./lib",
     "prepare": "npm run build",
     "prettier": "prettier --write '**/*.{js,json,md,yml}'"
