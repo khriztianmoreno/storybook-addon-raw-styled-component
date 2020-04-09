@@ -39,7 +39,7 @@
     "@storybook/api": "^5.3.4",
     "@storybook/components": "^5.3.4",
     "estraverse": "^5.0.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.0",
     "prismjs": "^1.19.0",
     "react-syntax-highlighter": "^12.2.1",
     "styled-components": "^5.1.0"
