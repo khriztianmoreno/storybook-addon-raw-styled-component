@@ -1,0 +1,24 @@
+{
+  "name": "@khriztianmoreno/storybook-addon-raw-styled-component",
+  "version": "1.0.0",
+  "description": "Example of a Storybook app using @khriztianmoreno/storybook-addon-raw-styled-component",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "@khriztianmoreno",
+  "private": true,
+  "dependencies": {
+    "styled-components": "5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.4",
+    "@storybook/addon-knobs": "^5.3.4",
+    "@storybook/addon-links": "^5.3.4",
+    "@storybook/addons": "^5.3.4",
+    "@storybook/react": "^5.3.4",
+    "babel-loader": "^8.0.6"
+  }
+}
