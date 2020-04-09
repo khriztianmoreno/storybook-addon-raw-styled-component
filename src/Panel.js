@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { useChannel, useAddonState } from '@storybook/api';
 import { styled } from '@storybook/theming';
-
-import SyntaxHighlighter from './SyntaxHighlighter';
 import style from 'react-syntax-highlighter/dist/esm/styles/hljs/github-gist';
 import { format as prettierFormat } from 'prettier/standalone';
 import prettierHtml from 'prettier/parser-html';
+
+import SyntaxHighlighter from './SyntaxHighlighter';
 
 import { EVENT_CODE_RECEIVED } from './shared';
 
@@ -35,6 +35,7 @@ const HTMLPanel = () => {
     code: '',
     css: '',
   });
+
   useChannel({
     [EVENT_CODE_RECEIVED]: ({ html, css, options }) => {
       const { prettier = {} } = options;
@@ -47,9 +48,10 @@ const HTMLPanel = () => {
       setState({ code, css: styles });
     },
   });
+
   return (
     <Fragment>
-      {state.code !== '' ? (
+      {state.code ? (
         <Fragment>
           <Title>
             <span>HTML 💻</span>
@@ -64,7 +66,7 @@ const HTMLPanel = () => {
           </SyntaxHighlighter>
         </Fragment>
       ) : null}
-      {state.code !== '' ? (
+      {state.css ? (
         <Fragment>
           <Title>
             <span>CSS 💅🏻</span>

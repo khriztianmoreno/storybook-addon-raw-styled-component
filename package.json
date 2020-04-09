@@ -1,13 +1,13 @@
 {
   "name": "@khriztianmoreno/storybook-addon-raw-styled-component",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "description": "A Storybook addon that extracts and displays compiled syntax-highlighted HTML & CSS",
   "main": "index.js",
   "scripts": {
-    "build": "yarn clean && babel -d ./lib ./src",
+    "build": "npm run clean && babel -d ./lib ./src",
     "build:watch": "babel --watch -d ./lib ./src",
     "clean": "rm -rf ./lib",
-    "prepare": "yarn build",
+    "prepare": "npm run build",
     "prettier": "prettier --write '**/*.{js,json,md,yml}'"
   },
   "keywords": [
@@ -48,9 +48,9 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/khriztianmoreno/storybook-addon-raw-styled-component//issues"
+    "url": "https://github.com/khriztianmoreno/storybook-addon-raw-styled-component/issues"
   },
-  "homepage": "https://github.com/khriztianmoreno/storybook-addon-raw-styled-component/#readme",
+  "homepage": "https://github.com/khriztianmoreno/storybook-addon-raw-styled-component/",
   "directories": {
     "example": "examples",
     "lib": "lib"

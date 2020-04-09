@@ -6,7 +6,7 @@ import Panel from './Panel';
 
 addons.register('khriztianmoreno/rawStyledComponent', () => {
   addons.add('markup/panel', {
-    title: 'RAW styled-Component',
+    title: 'RAW styled-component',
     type: types.PANEL,
     render: ({ active, key }) => (
       <AddonPanel active={active} key={key}>

@@ -34,7 +34,7 @@ Add `withHTML` as a global decorator inside `.storybook/config.js`:
 // .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
 
 addDecorator(withHTML);
 ```
@@ -47,7 +47,7 @@ The HTML is formatted with Prettier. You can override the Prettier config
 // .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
 
 addDecorator(
   withHTML({
