@@ -3,6 +3,9 @@
 This addon for Storybook adds a tab that displays the compiled HTML for each
 story. It uses [highlight.js](https://highlightjs.org/) for syntax highlighting.
 
+## Demo
+[Storybook Addon RAW styled-component](https://storybook-addon-raw-styled-component.netlify.com/)
+
 ## Getting Started
 
 ```sh
@@ -34,7 +37,7 @@ Add `withHTML` as a global decorator inside `.storybook/config.js`:
 // .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
 
 addDecorator(withHTML);
 ```
@@ -47,7 +50,7 @@ The HTML is formatted with Prettier. You can override the Prettier config
 // .storybook/preview.js
 
 import { addDecorator } from '@storybook/html';
-import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component/react';
+import { withHTML } from '@khriztianmoreno/storybook-addon-raw-styled-component';
 
 addDecorator(
   withHTML({
